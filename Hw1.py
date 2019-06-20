@@ -1,16 +1,16 @@
 def extract_data(filename):
     with open(filename, 'r') as info_file:
-        info_file.readline()
-        name = []
-        grades = []
+        student_data = {}
         for line in info_file:
-            words = line.split(',')
-            name.append(words[0])
-            grades.append(int(words[1]))
-        name = name[:-1]     
-        grades = grades[:-1] 
-        return name, grades
+            line = line.split(',')
+            name = line[0]
+            score = int(line[1])
+            if name not in student_data:
+                student_data[name] = []
+            student_data[name].append(score)
+            print(student_data[name])
+        return (student_data.items())
 
-name, grades = extract_data('C:/Users/46921166678/Python-Homework1/info.txt')
-print(name)
-print(grades)
+data  = extract_data('C:/Users/46921166678/Python-Homework1/info.txt')
+highest_averages = sorted(data, key=lambda x: sum(x[1])/float(len(x[1])), reverse=True)
+highest_scores = sorted(data, key=lambda x: max(x[1]), reverse=True)
