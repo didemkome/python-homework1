@@ -16,3 +16,9 @@ highest_scores = sorted(data, key=lambda x: max(x[1]), reverse=True)
 
 def print_function(x, y):
     print("{}, {}".format(x, y))
+
+for name, score in highest_scores:
+    print_function(name, max(score))
+
+for name, score in highest_averages:
+    print_function(name, sum(score)/float(len(score)))
