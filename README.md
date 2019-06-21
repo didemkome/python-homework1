@@ -1,4 +1,4 @@
-# Ortalama Bulma ve Sıralama Homework1-Python
+# Homework-1 Python
 ## Bu Çalışmanın Amacı
 info.txt dosyasında *ad soyad,not* formatında bulunan bilgiler ile kişilerin not ortalamasını hesaplama ve sıralama yapmayı içermektedir.
 ## Dosyadan Okuma İşlemi
