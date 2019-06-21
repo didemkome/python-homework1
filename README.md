@@ -1,6 +1,6 @@
 # Python Homework-1
 ## Bu Çalışmanın Amacı
-info.txt dosyasında ad_soyad,not formatında bulunan bilgiler ile kişilerin not ortalamasını hesaplama ve sıralama yapmayı içermektedir.
+info.txt dosyasında *ad soyad,not* formatında bulunan bilgiler ile kişilerin not ortalamasını hesaplama ve sıralama yapmayı içermektedir.
 ## Dosyadan Okuma İşlemi
 Python'da dosyayı okumak için önce **open** fonsiyonu ile açma işlemi yapılır. **open** fonksiyonu parametre olarak dosya adresini alır ve sonuç olaraksa bir dosya nesnesi döndürür. Okuma işlemi de bu dosya nesnesi üzerinden yapılır.  
 ``` 
