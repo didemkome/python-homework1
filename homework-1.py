@@ -3,10 +3,10 @@ def extract_data(filename):
     
     Bir .txt dosyasinda isimlere karşilik gelen not değerlerini virgule göre boler ve sonucu doner. 
     
-    >>>extract_data('deneme.txt')
+    >>> extract_data('test.txt')
     dict_items([('Didem Kome', [73]), ('Necla Surekli', [100])])
 
-    >>>extract_data('deneme2.txt')
+    >>> extract_data('test2.txt')
     dict_items([('didem', [10]), ('ozge', [51])])
 
     '''
@@ -30,15 +30,15 @@ def print_function(x, y):
 
     Verilerin belirli formatta ekrana çikti vermesini saglar.
 
-    >>>print_function('didem',45)
-    didem,45
+    >>> print_function('didem',45)
+    didem, 45
 
-    >>>print_function('merhaba',5)
-    merhaba,5
+    >>> print_function('merhaba',5)
+    merhaba, 5
 
     '''
     print("{}, {}".format(x, y))
-    
+
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
