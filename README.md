@@ -10,5 +10,5 @@ with open(filename, 'r') as file_pointer:
 ## Kullanılan Fonksiyonlar 
 * **extract_data** fonksiyonu parametre olarak dosya adı alır ve isimlere karşılık gelen not değerlerini döndürür. 
 
-* **print_func** fonksiyonu, hesaplanan verilerin belirli formatta ekrana çıktı vermesini sağlamaktadır.
+* **analyse_data** fonksiyonu ders ortalamasını hesaplayarak dersten geçen öğrencileri sıralar.
 
