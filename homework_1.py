@@ -1,6 +1,5 @@
 import sys
 
-
 def extract_data(filename):
     """
     >>> extract_data('./test_data.txt')
@@ -24,18 +23,22 @@ def extract_data(filename):
 def analyse_data():
     data = extract_data('./student_data.txt')
 
-    average_point = 0
-    for person_data in data:
-        student_score = person_data.get('student_score')
-        average_point += student_score
+    average_point = int(sum(x["student_score"] for x in data))
+    # average_point = 0
+    # for person_data in data:
+    #     student_score = person_data.get('student_score')
+    #     average_point += student_score
 
     average_point = average_point / len(data)
 
     students_grater_then_average = list()
-    for person_data in data:
-        student_score = person_data.get('student_score')
-        if student_score > average_point:
-            students_grater_then_average.append(person_data)
+
+    students_grater_then_average = [i for i in data if i['student_score'] >= average_point]
+
+    # for person_data in data:
+    #     student_score = person_data.get('student_score')
+    #     if student_score > average_point:
+    #         students_grater_then_average.append(person_data)
 
     students_grater_then_average = sorted(students_grater_then_average, key=lambda k: k['student_score'], reverse=True)
 
